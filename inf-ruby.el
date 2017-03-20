@@ -119,7 +119,8 @@ Currently only affects `inf-ruby-console-rails'."
       "\\(^\\(irb([^)]+)"                 ; IRB default
       "\\([[0-9]+] \\)?[Pp]ry ?([^)]+)"   ; Pry
       "\\(jruby-\\|JRUBY-\\)?[1-9]\\.[0-9]\\(\\.[0-9]+\\)*\\(-?p?[0-9]+\\)?" ; RVM
-      "^rbx-head\\)")                     ; RVM continued
+      "^rbx-head\\)"                      ; RVM continued
+      "\\(^\\[DEVELOPMENT\\]\\[web\\] \\)") ; Upstart
     "\\|")
    ;; Statement and nesting counters, common to the last four.
    " ?[0-9:]* ?%s *\\)")
